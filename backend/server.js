@@ -16,7 +16,9 @@ const limiter = rateLimit({
   max: 10,
 });
 app.use('/api/sync', limiter);
-
+app.get("/", (req, res) => {
+  res.send("CP Tracker Backend is Running 🚀");
+});
 const USERS_FILE = path.join(__dirname, 'data', 'users.json');
 const PROBLEMS_FILE = path.join(__dirname, 'data', 'problems.json');
 
