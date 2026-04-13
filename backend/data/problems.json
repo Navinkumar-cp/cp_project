@@ -1,41 +1,196 @@
 {
   "codeforces": [
-    { "id": "4A", "title": "Watermelon", "difficulty": "800", "url": "https://codeforces.com/problemset/problem/4/A", "topic": "Math Theory" },
-    { "id": "71A", "title": "Way Too Long Words", "difficulty": "800", "url": "https://codeforces.com/problemset/problem/71/A", "topic": "String Manipulation" },
-    { "id": "158A", "title": "Next Round", "difficulty": "800", "url": "https://codeforces.com/problemset/problem/158/A", "topic": "Arrays & Hashing" },
-    { "id": "231A", "title": "Team", "difficulty": "800", "url": "https://codeforces.com/problemset/problem/231/A", "topic": "Math Theory" },
-    { "id": "50A", "title": "Domino piling", "difficulty": "800", "url": "https://codeforces.com/problemset/problem/50/A", "topic": "Math Theory" },
-    { "id": "282A", "title": "Bit++", "difficulty": "800", "url": "https://codeforces.com/problemset/problem/282/A", "topic": "String Manipulation" },
-    { "id": "112A", "title": "Petya and Strings", "difficulty": "800", "url": "https://codeforces.com/problemset/problem/112/A", "topic": "String Manipulation" },
-    { "id": "339A", "title": "Helpful Maths", "difficulty": "800", "url": "https://codeforces.com/problemset/problem/339/A", "topic": "Sorting Algorithms" }
+    {
+      "id": "4A",
+      "title": "Watermelon",
+      "difficulty": "800",
+      "url": "https://codeforces.com/problemset/problem/4/A"
+    },
+    {
+      "id": "71A",
+      "title": "Way Too Long Words",
+      "difficulty": "800",
+      "url": "https://codeforces.com/problemset/problem/71/A"
+    },
+    {
+      "id": "158A",
+      "title": "Next Round",
+      "difficulty": "800",
+      "url": "https://codeforces.com/problemset/problem/158/A"
+    },
+    {
+      "id": "231A",
+      "title": "Team",
+      "difficulty": "800",
+      "url": "https://codeforces.com/problemset/problem/231/A"
+    },
+    {
+      "id": "50A",
+      "title": "Domino piling",
+      "difficulty": "800",
+      "url": "https://codeforces.com/problemset/problem/50/A"
+    },
+    {
+      "id": "282A",
+      "title": "Bit++",
+      "difficulty": "800",
+      "url": "https://codeforces.com/problemset/problem/282/A"
+    },
+    {
+      "id": "112A",
+      "title": "Petya and Strings",
+      "difficulty": "800",
+      "url": "https://codeforces.com/problemset/problem/112/A"
+    },
+    {
+      "id": "339A",
+      "title": "Helpful Maths",
+      "difficulty": "800",
+      "url": "https://codeforces.com/problemset/problem/339/A"
+    }
   ],
   "atcoder": [
-    { "id": "abc086_a", "title": "Product", "difficulty": "Beginner", "url": "https://atcoder.jp/contests/abs/tasks/abc086_a", "topic": "Math Theory" },
-    { "id": "abc081_a", "title": "Placing Marbles", "difficulty": "Beginner", "url": "https://atcoder.jp/contests/abs/tasks/abc081_a", "topic": "Arrays & Hashing" },
-    { "id": "abc081_b", "title": "Shift only", "difficulty": "Beginner", "url": "https://atcoder.jp/contests/abs/tasks/abc081_b", "topic": "Bit Manp." },
-    { "id": "abc087_b", "title": "Coins", "difficulty": "Beginner", "url": "https://atcoder.jp/contests/abs/tasks/abc087_b", "topic": "Math Theory" },
-    { "id": "abc083_b", "title": "Some Sums", "difficulty": "Beginner", "url": "https://atcoder.jp/contests/abs/tasks/abc083_b", "topic": "Math Theory" },
-    { "id": "abc088_b", "title": "Card Game for Two", "difficulty": "Beginner", "url": "https://atcoder.jp/contests/abs/tasks/abc088_b", "topic": "Sorting Algorithms" },
-    { "id": "abc085_b", "title": "Kagami Mochi", "difficulty": "Beginner", "url": "https://atcoder.jp/contests/abs/tasks/abc085_b", "topic": "Sorting Algorithms" },
-    { "id": "abc085_c", "title": "Otoshidama", "difficulty": "Beginner", "url": "https://atcoder.jp/contests/abs/tasks/abc085_c", "topic": "Math Theory" }
+    {
+      "id": "abc086_a",
+      "title": "Product",
+      "difficulty": "Beginner",
+      "url": "https://atcoder.jp/contests/abs/tasks/abc086_a"
+    },
+    {
+      "id": "abc081_a",
+      "title": "Placing Marbles",
+      "difficulty": "Beginner",
+      "url": "https://atcoder.jp/contests/abs/tasks/abc081_a"
+    },
+    {
+      "id": "abc081_b",
+      "title": "Shift only",
+      "difficulty": "Beginner",
+      "url": "https://atcoder.jp/contests/abs/tasks/abc081_b"
+    },
+    {
+      "id": "abc087_b",
+      "title": "Coins",
+      "difficulty": "Beginner",
+      "url": "https://atcoder.jp/contests/abs/tasks/abc087_b"
+    },
+    {
+      "id": "abc083_b",
+      "title": "Some Sums",
+      "difficulty": "Beginner",
+      "url": "https://atcoder.jp/contests/abs/tasks/abc083_b"
+    },
+    {
+      "id": "abc088_b",
+      "title": "Card Game for Two",
+      "difficulty": "Beginner",
+      "url": "https://atcoder.jp/contests/abs/tasks/abc088_b"
+    },
+    {
+      "id": "abc085_b",
+      "title": "Kagami Mochi",
+      "difficulty": "Beginner",
+      "url": "https://atcoder.jp/contests/abs/tasks/abc085_b"
+    },
+    {
+      "id": "abc085_c",
+      "title": "Otoshidama",
+      "difficulty": "Beginner",
+      "url": "https://atcoder.jp/contests/abs/tasks/abc085_c"
+    }
   ],
   "leetcode": [
-    { "id": "two-sum", "title": "Two Sum", "difficulty": "Easy", "url": "https://leetcode.com/problems/two-sum/", "topic": "Arrays & Hashing" },
-    { "id": "add-two-numbers", "title": "Add Two Numbers", "difficulty": "Medium", "url": "https://leetcode.com/problems/add-two-numbers/", "topic": "Math Theory" },
-    { "id": "longest-substring-without-repeating-characters", "title": "Longest Substring Without Repeating", "difficulty": "Medium", "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/", "topic": "Sliding Window" },
-    { "id": "median-of-two-sorted-arrays", "title": "Median of Two Sorted Arrays", "difficulty": "Hard", "url": "https://leetcode.com/problems/median-of-two-sorted-arrays/", "topic": "Binary Search" },
-    { "id": "longest-palindromic-substring", "title": "Longest Palindromic Substring", "difficulty": "Medium", "url": "https://leetcode.com/problems/longest-palindromic-substring/", "topic": "1D Dynamic Programming" },
-    { "id": "zigzag-conversion", "title": "Zigzag Conversion", "difficulty": "Medium", "url": "https://leetcode.com/problems/zigzag-conversion/", "topic": "String Manipulation" },
-    { "id": "reverse-integer", "title": "Reverse Integer", "difficulty": "Medium", "url": "https://leetcode.com/problems/reverse-integer/", "topic": "Math Theory" },
-    { "id": "string-to-integer-atoi", "title": "String to Integer (atoi)", "difficulty": "Medium", "url": "https://leetcode.com/problems/string-to-integer-atoi/", "topic": "String Manipulation" }
+    {
+      "id": "two-sum",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/two-sum/"
+    },
+    {
+      "id": "add-two-numbers",
+      "title": "Add Two Numbers",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/add-two-numbers/"
+    },
+    {
+      "id": "longest-substring-without-repeating-characters",
+      "title": "Longest Substring Without Repeating",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/"
+    },
+    {
+      "id": "median-of-two-sorted-arrays",
+      "title": "Median of Two Sorted Arrays",
+      "difficulty": "Hard",
+      "url": "https://leetcode.com/problems/median-of-two-sorted-arrays/"
+    },
+    {
+      "id": "longest-palindromic-substring",
+      "title": "Longest Palindromic Substring",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/longest-palindromic-substring/"
+    },
+    {
+      "id": "zigzag-conversion",
+      "title": "Zigzag Conversion",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/zigzag-conversion/"
+    },
+    {
+      "id": "reverse-integer",
+      "title": "Reverse Integer",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/reverse-integer/"
+    },
+    {
+      "id": "string-to-integer-atoi",
+      "title": "String to Integer (atoi)",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/string-to-integer-atoi/"
+    }
   ],
   "codechef": [
-    { "id": "START01", "title": "Number Mirror", "difficulty": "Beginner", "url": "https://www.codechef.com/problems/START01", "topic": "Math Theory" },
-    { "id": "FLOW001", "title": "Add Two Numbers", "difficulty": "Beginner", "url": "https://www.codechef.com/problems/FLOW001", "topic": "Math Theory" },
-    { "id": "FLOW004", "title": "First and Last Digit", "difficulty": "Beginner", "url": "https://www.codechef.com/problems/FLOW004", "topic": "Math Theory" },
-    { "id": "FLOW006", "title": "Sum of Digits", "difficulty": "Beginner", "url": "https://www.codechef.com/problems/FLOW006", "topic": "Math Theory" },
-    { "id": "INTEST", "title": "Enormous Input Test", "difficulty": "Beginner", "url": "https://www.codechef.com/problems/INTEST", "topic": "Arrays & Hashing" },
-    { "id": "HS08TEST", "title": "ATM", "difficulty": "Beginner", "url": "https://www.codechef.com/problems/HS08TEST", "topic": "Math Theory" },
-    { "id": "LUCKFOUR", "title": "Lucky Four", "difficulty": "Beginner", "url": "https://www.codechef.com/problems/LUCKFOUR", "topic": "Math Theory" }
+    {
+      "id": "START01",
+      "title": "Number Mirror",
+      "difficulty": "Beginner",
+      "url": "https://www.codechef.com/problems/START01"
+    },
+    {
+      "id": "FLOW001",
+      "title": "Add Two Numbers",
+      "difficulty": "Beginner",
+      "url": "https://www.codechef.com/problems/FLOW001"
+    },
+    {
+      "id": "FLOW004",
+      "title": "First and Last Digit",
+      "difficulty": "Beginner",
+      "url": "https://www.codechef.com/problems/FLOW004"
+    },
+    {
+      "id": "FLOW006",
+      "title": "Sum of Digits",
+      "difficulty": "Beginner",
+      "url": "https://www.codechef.com/problems/FLOW006"
+    },
+    {
+      "id": "INTEST",
+      "title": "Enormous Input Test",
+      "difficulty": "Beginner",
+      "url": "https://www.codechef.com/problems/INTEST"
+    },
+    {
+      "id": "HS08TEST",
+      "title": "ATM",
+      "difficulty": "Beginner",
+      "url": "https://www.codechef.com/problems/HS08TEST"
+    },
+    {
+      "id": "LUCKFOUR",
+      "title": "Lucky Four",
+      "difficulty": "Beginner",
+      "url": "https://www.codechef.com/problems/LUCKFOUR"
+    }
   ]
 }

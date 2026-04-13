@@ -113,6 +113,7 @@ async function syncCodechef(handle) {
     solvedStatus.codechef = [...new Set(solvedIds)];
   } catch (err) {
     console.error('CodeChef Sync error:', err.message);
+    solvedStatus.codechef = [];
   }
 }
 
@@ -124,7 +125,7 @@ app.post('/api/sync', async (req, res) => {
     syncLeetcode(handles.leetcode),
     syncCodechef(handles.codechef)
   ]);
-  
+
   res.json({ success: true, solved: solvedStatus });
 });
 
@@ -132,7 +133,7 @@ app.get('/api/contests', async (req, res) => {
   try {
     const response = await axios.get('https://kontests.net/api/v1/all');
     // Filter for the main platforms we care about if possible, or return all
-    const relevant = response.data.filter(c => 
+    const relevant = response.data.filter(c =>
       ['CodeForces', 'AtCoder', 'LeetCode', 'CodeChef'].some(site => c.site.includes(site))
     );
     res.json(relevant.length > 0 ? relevant : response.data.slice(0, 50));
@@ -142,7 +143,8 @@ app.get('/api/contests', async (req, res) => {
   }
 });
 
-const PORT = 3001;
+// const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`Backend server running on port ${PORT}`);
 });
