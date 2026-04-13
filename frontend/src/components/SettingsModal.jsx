@@ -14,7 +14,7 @@ export default function SettingsModal({ isOpen, onClose, settings, onSave }) {
     e.preventDefault();
     setSaving(true);
     try {
-      await axios.post('/api/settings', localSettings);
+      await axios.post(`${import.meta.env.VITE_API_URL}/api/settings`, localSettings);
       onSave(localSettings);
     } catch (err) {
       console.error(err);
@@ -32,7 +32,7 @@ export default function SettingsModal({ isOpen, onClose, settings, onSave }) {
             <X className="h-5 w-5" />
           </button>
         </div>
-        
+
         <form onSubmit={handleSubmit} className="p-6 space-y-4">
           {Object.keys(localSettings).map((platform) => (
             <div key={platform}>
@@ -49,7 +49,7 @@ export default function SettingsModal({ isOpen, onClose, settings, onSave }) {
               />
             </div>
           ))}
-          
+
           <div className="pt-4 flex justify-end gap-3">
             <button
               type="button"

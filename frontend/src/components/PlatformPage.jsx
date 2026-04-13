@@ -16,11 +16,11 @@ export default function PlatformPage() {
 
   const fetchProblems = async () => {
     try {
-      const res = await axios.get('/api/problems');
+      const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/problems`);
       // res.data should have shape { [platform]: [problems], solved: { [platform]: [ids] } }
       const platformData = res.data.problems[name] || [];
       const solvedList = res.data.solved[name] || [];
-      
+
       const mapped = platformData.map(p => ({
         ...p,
         isSolved: solvedList.includes(p.id)
@@ -71,7 +71,7 @@ export default function PlatformPage() {
                 <p className="text-sm text-gray-500">{problem.difficulty || 'Standard'} • ID: {problem.id}</p>
               </div>
             </div>
-            
+
             <div className="flex items-center gap-3">
               {problem.isSolved ? (
                 <div className="bg-green-500/10 text-green-400 border border-green-500/20 px-3 py-1.5 rounded-md text-sm font-semibold flex items-center gap-2">

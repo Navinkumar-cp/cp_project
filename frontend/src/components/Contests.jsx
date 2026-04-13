@@ -9,7 +9,7 @@ export default function Contests() {
   useEffect(() => {
     const fetchContests = async () => {
       try {
-        const res = await axios.get('/api/contests');
+        const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/contests`);
         setContests(res.data);
       } catch (err) {
         console.error(err);
@@ -40,46 +40,46 @@ export default function Contests() {
 
   return (
     <div className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500 max-w-6xl mx-auto">
-       <div>
+      <div>
         <h1 className="text-3xl font-bold tracking-tight text-white mb-2">Upcoming Contests</h1>
         <p className="text-gray-400">Never miss a competition. Mark your calendar for these global contest events.</p>
       </div>
 
       <div className="grid gap-4">
         {contests.length === 0 ? (
-           <div className="text-center p-12 bg-gray-900 border border-gray-800 rounded-xl">
-             <Calendar className="h-12 w-12 text-gray-600 mx-auto mb-4" />
-             <h3 className="text-xl font-bold text-gray-400">No upcoming contests found.</h3>
-           </div>
+          <div className="text-center p-12 bg-gray-900 border border-gray-800 rounded-xl">
+            <Calendar className="h-12 w-12 text-gray-600 mx-auto mb-4" />
+            <h3 className="text-xl font-bold text-gray-400">No upcoming contests found.</h3>
+          </div>
         ) : (
           contests.map((contest, i) => (
             <div key={i} className="flex flex-col md:flex-row items-start md:items-center justify-between p-5 bg-gray-900 border border-gray-800 rounded-xl hover:border-teal-500/50 transition">
               <div className="flex-1">
-                 <div className="flex items-center gap-3 mb-2">
-                    <span className={`text-xs font-bold px-2.5 py-1 rounded-md border ${getSiteColor(contest.site)} uppercase tracking-wider`}>
-                      {contest.site}
-                    </span>
-                    <span className="flex items-center gap-1.5 text-xs font-medium text-gray-500 bg-gray-950 px-2 py-1 rounded-md border border-gray-800">
-                      <Clock className="w-3.5 h-3.5" />
-                      {formatDuration(contest.duration)}
-                    </span>
-                 </div>
-                 <h2 className="text-xl font-bold text-gray-100">{contest.name}</h2>
+                <div className="flex items-center gap-3 mb-2">
+                  <span className={`text-xs font-bold px-2.5 py-1 rounded-md border ${getSiteColor(contest.site)} uppercase tracking-wider`}>
+                    {contest.site}
+                  </span>
+                  <span className="flex items-center gap-1.5 text-xs font-medium text-gray-500 bg-gray-950 px-2 py-1 rounded-md border border-gray-800">
+                    <Clock className="w-3.5 h-3.5" />
+                    {formatDuration(contest.duration)}
+                  </span>
+                </div>
+                <h2 className="text-xl font-bold text-gray-100">{contest.name}</h2>
               </div>
 
               <div className="mt-4 md:mt-0 flex flex-col md:items-end w-full md:w-auto">
-                 <p className="text-gray-300 font-medium whitespace-nowrap mb-1 flex items-center gap-2">
-                    <Calendar className="w-4 h-4 text-teal-500" />
-                    {new Date(contest.start_time).toLocaleString(undefined, { weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit'})}
-                 </p>
-                 <a 
-                   href={contest.url}
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   className="mt-3 md:mt-1 inline-flex items-center gap-2 text-sm text-teal-400 font-medium hover:text-teal-300 transition"
-                 >
-                   Register / View Details <ExternalLink className="w-3.5 h-3.5" />
-                 </a>
+                <p className="text-gray-300 font-medium whitespace-nowrap mb-1 flex items-center gap-2">
+                  <Calendar className="w-4 h-4 text-teal-500" />
+                  {new Date(contest.start_time).toLocaleString(undefined, { weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })}
+                </p>
+                <a
+                  href={contest.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-3 md:mt-1 inline-flex items-center gap-2 text-sm text-teal-400 font-medium hover:text-teal-300 transition"
+                >
+                  Register / View Details <ExternalLink className="w-3.5 h-3.5" />
+                </a>
               </div>
             </div>
           ))

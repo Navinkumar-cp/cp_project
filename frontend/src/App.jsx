@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Settings, RefreshCcw, Bell } from 'lucide-react';
 import axios from 'axios';
 
+
 // Components
 import Sidebar from './components/Sidebar';
 import Dashboard from './components/Dashboard';
@@ -28,7 +29,7 @@ function App() {
 
   const fetchSettings = async () => {
     try {
-      const res = await axios.get('/api/settings');
+      const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/settings`);
       setHandleSettings(res.data);
     } catch (err) {
       console.error('Failed to load settings', err);
@@ -38,7 +39,7 @@ function App() {
   const handleSync = async () => {
     setSyncing(true);
     try {
-      await axios.post('/api/sync', handleSettings);
+      await axios.post(`${import.meta.env.VITE_API_URL}/api/sync`, handleSettings);
       window.dispatchEvent(new Event('syncComplete'));
     } catch (err) {
       console.error('Failed to sync', err);
